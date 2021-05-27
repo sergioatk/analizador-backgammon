@@ -5,3 +5,8 @@ h1 {
 .datos-jugadores {
     text-align: center;
 }
+
+.oculto {
+    display: none;
+}
+
