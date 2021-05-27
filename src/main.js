@@ -4,7 +4,7 @@ let secuenciaJugador2 = [];
 
 
 
-const $botonDado = document.querySelector('#boton-dado');
+
 
 const $inputValorDados = document.querySelector('#resultado-dados');
 
@@ -21,15 +21,15 @@ $inputValorDados.onkeypress  = function(e) {
     
     
 }
-$botonDado.onclick = function() {
+// $botonDado.onclick = function() {
     
-    const nuevosDados = separarNumEnArray(obtenerValorDados());
+//     const nuevosDados = separarNumEnArray(obtenerValorDados());
 
-    manejarSecuencias(nuevosDados);
+//     manejarSecuencias(nuevosDados);
     
 
-    return false
-}
+//     return false
+// }
 
 function manejarSecuencias(dados) {
     if (secuenciaJugador1.length === 0) {
@@ -84,7 +84,7 @@ function configurarNombres(arrNombres) { // TERMINADO
 
     nombreEnPantalla1.textContent = nombre1;
     nombreEnPantalla2.textContent = nombre2;
-    
+
     const $datosJugadores = document.querySelector('.datos-jugadores');
     $datosJugadores.classList.add('oculto');
 
