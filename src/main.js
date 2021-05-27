@@ -105,7 +105,9 @@ function calcularPromedio(array) {
         return num + acc;
     })
 
-    return resultado / array.length;
+    const promedio = (resultado / array.length).toFixed(1); 
+      
+    return promedio;
 }
 
 function obtenerValorDados() {
