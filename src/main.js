@@ -21,15 +21,6 @@ $inputValorDados.onkeypress  = function(e) {
     
     
 }
-// $botonDado.onclick = function() {
-    
-//     const nuevosDados = separarNumEnArray(obtenerValorDados());
-
-//     manejarSecuencias(nuevosDados);
-    
-
-//     return false
-// }
 
 function manejarSecuencias(dados) {
     if (secuenciaJugador1.length === 0) {
@@ -76,6 +67,7 @@ function separarNumEnArray(num) { // TERMINADO
 }
 
 function configurarNombres(arrNombres) { // TERMINADO
+    console.log('hola')
     const nombre1 = document.querySelector('#jugador-1').value;
     const nombre2 = document.querySelector('#jugador-2').value;
 

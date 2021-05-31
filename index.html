@@ -12,72 +12,69 @@
     
 </head>
 <body>
-    
-    <div class="container">
 
-        <div class="row">
-            <h1>Backgammon</h1>
-        </div>
-        <div class=" row">
-            <div class="col datos-jugadores">
-                <form >
-                    <div class="form-row">
-                      <div class="form-group col">
-                        <label for="jugador-1">Jugador 1</label>
-                        <input type="text" class="form-control" placeholder="nombre..." id="jugador-1">
-                      </div>
-                      <div class="form-group col">
-                        <label for="jugador-2">Jugador 2</label>
-                        <input type="text" class="form-control" placeholder="nombre..." id="jugador-2">
-                      </div>
+    <div class="contenderor-de-todo">
+        <h1 class="display-1">Backgammon</h1>
 
-                      <div class="form-group col-3">
-                          
-                        <button type="button" class="btn btn-primary btn-lg" id="boton-nombres">Empezar</button>
-                      </div>
-                      
-                    </div>
-                  </form>
+        <div class="datos-jugadores">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-8">
+                    <label for="jugador-1">Jugador 1</label>
+                    <input type="text" class="form-control" placeholder="nombre..." id="jugador-1">
+                </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-8">
+                    <label for="jugador-2">Jugador 2</label>
+                    <input type="text" class="form-control" placeholder="nombre..." id="jugador-2">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-primary btn-lg" id="boton-nombres">Empezar</button>
+                </div>
+            </div>
+        </div>
+        
+        
 
-
-<!-- /////////////////////////////////////////////////////////// -->
-
-
-        <div class="row oculto" id="calculadora">
-           
-            
-            <div class="col">
-                <h2>Resultados</h2>
-
-                <h3>Resultados <span id="nombre-jugador-1">jugador 1</span></h3>
-                <div class="row">
+        <div class="container calculadora" id="calculadora">
+            <h2 class="display-4">Resultados</h2>
+    
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-8">
+                    <h3>Resultados <span id="nombre-jugador-1">jugador 1</span></h3>
                     <label for="">Promedio resultado dados</label>
                     <input class="form-control" type="number" readonly id="promedio-j1">
                 </div>
-
-                <h3>Resultados <span id="nombre-jugador-2">jugador 2</span></h3>
-                <div class="row">
+            </div>
+    
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-8">
+                    <h3>Resultados <span id="nombre-jugador-2">jugador 2</span></h3>
                     <label for="">Promedio resultado dados</label>
-                    <input class="form-control" type="number"  readonly id="promedio-j2">
+                <input class="form-control" type="number"  readonly id="promedio-j2">
                 </div>
             </div>
-
-            <div class="col">
-                <h2>Dados</h2>
-                <form action="">
-                    <label for="resultado-dados">Ingresá los dos números juntos, ej, si sacaste un 2 y un 3, escribí 23 o 32.</label> <br>
-                
-                    <input type="tel" class="form-control" id="resultado-dados" placeholder="ingresar dados" maxlength="2">
-                    <!-- <button type="submit" class="btn btn-primary btn-lg" id="boton-dado">OK</button> -->
-                </form>
+    
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-8">
+                    <h2>Dados</h2>
+                    <form action="">
+                        <label for="resultado-dados">Ingresá los dos números juntos, ej, si sacaste un 2 y un 3, escribí 23 o 32.</label> <br>
+                    
+                        <input type="tel" class="form-control" id="resultado-dados" placeholder="ingresar dados" maxlength="2">
+                </div>
             </div>
-
-            
+            </div>
         </div>
-
-
     </div>
+
+    
+
+    
+  
+            
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src='src/main.js'></script>
 </body>
