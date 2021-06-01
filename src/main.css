@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 
 #boton-nombres{
@@ -8,6 +8,9 @@
     padding: 25px;
 }
 
+/* #promedio-j1 {
+    background-color: teal;
+} */
 
 h1,h2,h3 {
     text-align: center;
@@ -35,12 +38,23 @@ label {
     margin-top: 15px;
 }
 
+/* #resultado-dados {
+    background-color: crimson;
+} */
+
 .resaltar-azul {
     background-color: cadetblue;
-    transition: 100ms;
+    
 }
 
+.transparente {
+    background-color: transparent;
+    transition: 400ms;
+    
+}
 .resaltar-rojo {
     background-color: crimson;
-    transition: 100ms;
+    transition: 400ms;
+    
+    
 }

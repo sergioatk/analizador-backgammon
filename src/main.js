@@ -45,10 +45,11 @@ function actualizarPromedio(array, jugador) {
     const promedio = calcularPromedio(array);
 
     if (jugador) { //jugador 1
-        
+        console.log('hola')
+        resaltarInput($promedioJ1, 'azul');
         $promedioJ1.value = promedio;
 
-    } else {
+    } else { //jugador 2
 
         $promedioJ2.value = promedio;
     }
@@ -114,3 +115,21 @@ function obtenerValorDados() {
 function resetearValorDados() {
     document.querySelector('#resultado-dados').value = ''
 }
+
+function resaltarInput(input, color) {
+    
+    const claseCSS = `resaltar-${color}`;
+
+    input.classList.add(claseCSS);
+
+    setTimeout(() => {
+        input.classList.remove(claseCSS);
+    }, 400)
+
+    input.classList.add('transparente');
+}
+
+const primerPromedio = document.querySelector('#promedio-j1');
+
+resaltarInput(primerPromedio, 'rojo');
+console.log('a')
