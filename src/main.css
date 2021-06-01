@@ -1,6 +1,24 @@
 * {
     margin: 0;
-    padding: 0;;
+    padding: 0;
+}
+
+.resaltar-azul {
+    background-color: cadetblue !important;
+    transition: 300ms;
+    
+}
+
+.transparente {
+    background-color: transparent;
+    transition: 400ms;
+    
+}
+.resaltar-rojo {
+    background-color: crimson !important;
+    transition: 400ms;
+    
+    
 }
 
 #boton-nombres{
@@ -8,6 +26,9 @@
     padding: 25px;
 }
 
+/* #promedio-j1 {
+    background-color: teal;
+} */
 
 h1,h2,h3 {
     text-align: center;
@@ -31,16 +52,11 @@ label {
     display: none;
 }
 
-#boton-rehacer {
+#boton-deshacer {
     margin-top: 15px;
 }
 
-.resaltar-azul {
-    background-color: cadetblue;
-    transition: 100ms;
-}
-
-.resaltar-rojo {
+/* #resultado-dados {
     background-color: crimson;
-    transition: 100ms;
-}
+} */
+

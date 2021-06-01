@@ -1,3 +1,7 @@
+const $promedioJ1 = document.querySelector('#promedio-j1');
+const $promedioJ2 = document.querySelector('#promedio-j2');
+const $botonDeshacer = document.querySelector('#boton-deshacer');
+
 let secuenciaJugador1 = [];
 let secuenciaJugador2 = [];
 
@@ -39,24 +43,34 @@ function manejarSecuencias(dados) {
     
 }
 function actualizarPromedio(array, jugador) {
-    const $promedioJ1 = document.querySelector('#promedio-j1');
-    const $promedioJ2 = document.querySelector('#promedio-j2');
-
     const promedio = calcularPromedio(array);
-
     if (jugador) { //jugador 1
-        
+        resaltarInput($promedioJ1, 'azul');
         $promedioJ1.value = promedio;
-
-    } else {
-
+    } else { //jugador 2
+        resaltarInput($promedioJ2, 'azul');
         $promedioJ2.value = promedio;
     }
 }
 
+$botonDeshacer.onclick = deshacerAnotacion;
 
-
-//////////////////////////////////////////// TERMINADO ////////////////////////////////////////////
+function deshacerAnotacion() {
+    if (secuenciaJugador1.length > secuenciaJugador2.length) {
+        secuenciaJugador1.pop();
+        secuenciaJugador1.pop();
+        console.log(secuenciaJugador1);
+        resaltarInput($promedioJ1, 'rojo');
+        actualizarPromedio(secuenciaJugador1, true);
+    } else {
+        secuenciaJugador2.pop();
+        secuenciaJugador2.pop();
+        console.log(secuenciaJugador2);
+        resaltarInput($promedioJ2, 'rojo');
+        actualizarPromedio(secuenciaJugador2, false);
+    }
+    return false;
+}
 
 function separarNumEnArray(num) { // TERMINADO
     
@@ -93,13 +107,18 @@ $botonNombres.onclick = configurarNombres; // TERMINADO
 
 
 function calcularPromedio(array) {
-    const resultado = array.reduce((acc, num) => {
-        return num + acc;
-    })
+    if (array.length) {
+        const resultado = array.reduce((acc, num) => {
+            return num + acc;
+        })
 
-    const promedio = (resultado / array.length).toFixed(1); 
+        const promedio = (resultado / array.length).toFixed(1); 
       
-    return promedio;
+        return promedio;
+    }
+    
+
+    
 }
 
 function obtenerValorDados() {
@@ -114,3 +133,21 @@ function obtenerValorDados() {
 function resetearValorDados() {
     document.querySelector('#resultado-dados').value = ''
 }
+
+function resaltarInput(input, color) {
+    
+    const claseCSS = `resaltar-${color}`;
+
+    input.classList.add(claseCSS);
+
+    setTimeout(() => {
+        input.classList.remove(claseCSS);
+    }, 190)
+
+    input.classList.add('transparente');
+}
+
+const primerPromedio = document.querySelector('#promedio-j1');
+
+// resaltarInput(primerPromedio, 'rojo');
+// console.log('a')
