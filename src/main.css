@@ -3,6 +3,24 @@
     padding: 0;
 }
 
+.resaltar-azul {
+    background-color: cadetblue !important;
+    transition: 300ms;
+    
+}
+
+.transparente {
+    background-color: transparent;
+    transition: 400ms;
+    
+}
+.resaltar-rojo {
+    background-color: crimson !important;
+    transition: 400ms;
+    
+    
+}
+
 #boton-nombres{
     margin: 20px;
     padding: 25px;
@@ -34,7 +52,7 @@ label {
     display: none;
 }
 
-#boton-rehacer {
+#boton-deshacer {
     margin-top: 15px;
 }
 
@@ -42,19 +60,3 @@ label {
     background-color: crimson;
 } */
 
-.resaltar-azul {
-    background-color: cadetblue;
-    
-}
-
-.transparente {
-    background-color: transparent;
-    transition: 400ms;
-    
-}
-.resaltar-rojo {
-    background-color: crimson;
-    transition: 400ms;
-    
-    
-}
