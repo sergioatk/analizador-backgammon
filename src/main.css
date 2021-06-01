@@ -4,11 +4,11 @@
 }
 
 #boton-nombres{
-    margin-top: 20px;
+    margin: 20px;
+    padding: 25px;
 }
-.area-nombres {
-    /* background-color: aquamarine; */
-}
+
+
 h1,h2,h3 {
     text-align: center;
 }
@@ -33,4 +33,14 @@ label {
 
 #boton-rehacer {
     margin-top: 15px;
+}
+
+.resaltar-azul {
+    background-color: cadetblue;
+    transition: 100ms;
+}
+
+.resaltar-rojo {
+    background-color: crimson;
+    transition: 100ms;
 }
