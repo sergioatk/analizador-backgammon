@@ -11,6 +11,29 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     
 }
 
+.navegacion {
+    background-color: #687980;
+    font-size: 1.6rem;
+    
+    
+}
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: cornsilk;
+}
+.link-nav {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;;
+    background-color: #02475e;
+}
+
 .transparente {
     background-color: transparent;
     transition: 400ms;
@@ -28,9 +51,11 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     padding: 25px;
 }
 
-/* #promedio-j1 {
-    background-color: teal;
-} */
+.svg {
+    height: 30px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+}
 
 h1,h2,h3 {
     text-align: center;
