@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 .resaltar-azul {
     background-color: cadetblue !important;
     transition: 300ms;
