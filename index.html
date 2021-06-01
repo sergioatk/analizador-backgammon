@@ -18,54 +18,101 @@
 
         <div class="datos-jugadores">
             <div class="row justify-content-center">
-                <div class="col-md-6 col-8">
-                    <label for="jugador-1">Jugador 1</label>
+                <div class="col-5">
+                    <h1 class="display-5">Jugador 1</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5">
                     <input type="text" class="form-control" placeholder="nombre..." id="jugador-1">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-8">
-                    <label for="jugador-2">Jugador 2</label>
-                    <input type="text" class="form-control" placeholder="nombre..." id="jugador-2">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col text-center">
-                    <button type="button" class="btn btn-primary btn-lg" id="boton-nombres">Empezar</button>
                 </div>
             </div>
         </div>
         
+        <div class="datos-jugadores">
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <h1 class="display-5">Jugador 2</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="nombre..." id="jugador-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary btn-lg" id="boton-nombres">Empezar</button>
+            </div>
+        </div>
+
+        
+                    
+           
+        
         
 
-        <div class="container calculadora oculto" id="calculadora">
+        <div class="container calculadora " id="calculadora">
             <h2 class="display-4">Resultados</h2>
     
             <div class="row justify-content-center">
-                <div class="col-md-6 col-8">
+                <div class="col-4">
                     <h3>Resultados <span id="nombre-jugador-1">jugador 1</span></h3>
+                    
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col text-center">
                     <label for="">Promedio resultado dados</label>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-3"> 
                     <input class="form-control" type="number" readonly id="promedio-j1">
                 </div>
             </div>
-    
+
             <div class="row justify-content-center">
-                <div class="col-md-6 col-8">
+                <div class="col">
                     <h3>Resultados <span id="nombre-jugador-2">jugador 2</span></h3>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col text-center">
                     <label for="">Promedio resultado dados</label>
-                <input class="form-control" type="number"  readonly id="promedio-j2">
                 </div>
             </div>
     
             <div class="row justify-content-center">
-                <div class="col-md-6 col-8">
-                    <h2>Dados</h2>
-                    <form action="">
-                        <label for="resultado-dados">Ingresá los dos números juntos, ej, si sacaste un 2 y un 3, escribí 23 o 32.</label> <br>
-                    
-                        <input type="tel" class="form-control" id="resultado-dados" placeholder="ingresar dados" maxlength="2">
+                <div class="col-3">
+                    <input class="form-control" type="number"  readonly id="promedio-j2">
                 </div>
             </div>
+    
+            <hr>
+
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <h2>Dados</h2>
+
+                    
+                        
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <label for="resultado-dados">Ingresá los dos números juntos, ej, si sacaste un 2 y un 3, escribí 23 o 32.</label> <br>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <input type="tel" class="form-control" id="resultado-dados" placeholder="ingresar dados" maxlength="2">
+                </div>
             </div>
         </div>
     </div>
